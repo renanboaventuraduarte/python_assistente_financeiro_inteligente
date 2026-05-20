@@ -1,85 +1,96 @@
-# 📋 Documentação do Agente
+# 🤖 Helpi — Analista Financeiro Pessoal
 
-## Caso de Uso
-
-### Problema
-> Qual problema financeiro seu agente resolve?
-
-O agente vai auxiliar pessoas que tem problemas de controle financeiro e não sabem como gerenciar seus recursos.
-
-### Solução
-> Como o agente resolve esse problema de forma proativa?
-
-O agente irá analisar a base de dados do próprio cliente para demonstrar a atual situação, utilizando de tabelas de fácil compreensão e dicas estratégicas sobre gerenciamento de recursos.
-
-### Público-Alvo
-> Quem vai usar esse agente?
-
-Pessoas que sofrem com problemas de gestão/visualização de controle financeiro.
+Agente de IA para controle e visualização de finanças pessoais. O Helpi analisa os dados do cliente e apresenta sua situação financeira de forma clara, com tabelas e dicas práticas.
 
 ---
 
-## Persona e Tom de Voz
+## 💡 O Problema
 
-### Nome do Agente
-Helpi
-
-### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
-
-- Direto e preciso.
-- Demostra com tabelas.
-- Responde com textos explicativos de maneira explícita.
-  
-### Tom de Comunicação
-> Formal, informal, técnico, acessível?
-
-- Informal, educado e acessível, como um consultor financeiro amigável.
-
-### Exemplos de Linguagem
-- Saudação: "Olá! Sou o Helpi, seu assistente financeiro. Vamos analisar sua atual situação?"
-- Confirmação: "Hoje vou te mostrar como está sua situação de maneira fácil e explícita..."
-- Erro/Limitação: "Eu sou um assistente financeiro pessoal, consigo te ajudar apenas com a gestão da sua conta."
+Cerca de 80% das famílias brasileiras sofrem com endividamento por não saberem gerenciar seus recursos. O Helpi resolve isso tornando a análise financeira simples e acessível.
 
 ---
 
-## Arquitetura
+## 🧠 Como Funciona
 
-### Diagrama
-
-```mermaid
-flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> E[LLM]
-    E --> F[Validação]
-    F --> G[Resposta]
+```
+Cliente → Interface (Streamlit) → LLM (Gemini) → Base de Conhecimento → Resposta
 ```
 
-### Componentes
-
-| Componente | Descrição |
-|------------|-----------|
-| Interface | [Streamlit](https://streamlit.io/) |
-| LLM | GOOGLE GEMINI |
-| Base de Conhecimento | JSON/CSV mockados na pasta 'data' |
+O agente carrega os dados do cliente diretamente no contexto do prompt e responde perguntas sobre gastos, metas e produtos financeiros adequados ao perfil.
 
 ---
 
-## Segurança e Anti-Alucinação
+## 📁 Estrutura
 
-### Estratégias Adotadas
+```
+├── data/
+│   ├── perfil_investidor.json       # Perfil e metas do cliente
+│   ├── transacoes.csv               # Histórico de transações
+│   ├── historico_atendimento.csv    # Atendimentos anteriores
+│   └── produtos_financeiros.json   # Produtos disponíveis para sugestão
+├── docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
+└── src/
+    └── app.py                       # Aplicação principal (Streamlit)
+```
 
-- Só use dados do usuário fornecidos no contexto
-- Não recomenda investimentos com risco alto
-- Admite quando não sabe algo
-- Foca apenas em auxiliar na conta do usuário, apenas apresentando soluções analíticas
+---
 
-### Limitações Declaradas
-> O que o agente NÃO faz?
+## 🚀 Como Rodar
 
-- Não responde perguntas fora do contexto
-- Não substitui um profissinal certificado
-- Não mostra nenhuma senha e não mostra dados de outros clientes
-- Não utiliza dados com mais de 1 ano
+```bash
+# 1. Instalar dependências
+pip install streamlit pandas google-genai
+
+# 2. Inserir sua API Key do Gemini em src/app.py
+# Localize: client = genai.Client(api_key="SUA_CHAVE_AQUI")
+
+# 3. Rodar a aplicação
+streamlit run src/app.py
+```
+
+---
+
+## 🛠️ Tecnologias
+
+| Componente | Tecnologia |
+|------------|------------|
+| Interface  | Streamlit  |
+| LLM        | Google Gemini 2.5 Flash |
+| Dados      | JSON + CSV (mockados) |
+
+---
+
+## 🔒 Segurança
+
+- Responde **apenas** com dados do cliente fornecidos no contexto
+- Não recomenda investimentos de risco alto
+- Não exibe dados de outros clientes nem senhas
+- Admite quando não tem uma informação
+
+---
+
+## 📊 Exemplos de Uso
+
+| Pergunta | Comportamento esperado |
+|----------|----------------------|
+| "Como está minha situação hoje?" | Resumo financeiro com tabela |
+| "Onde estou gastando mais?" | Gastos por categoria |
+| "Qual investimento me recomenda?" | Sugestão compatível com o perfil |
+| "Qual a previsão do tempo?" | Redireciona para finanças |
+
+---
+
+## ✅ Resultados
+
+- Assertividade: **5/5** — Respostas corretas baseadas nos dados
+- Segurança: **5/5** — Sem alucinações ou informações inventadas
+- Coerência: **5/5** — Linguagem clara e acessível
+
+---
+
+> ⚠️ O Helpi não substitui um profissional certificado. Para decisões complexas, consulte um especialista financeiro.
