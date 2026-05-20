@@ -7,7 +7,7 @@ from google.genai import types
 
 # ========= CONFIGURAÇÃO DO GEMINI =========
 # configuração da API Key do Google Gemini (substitua pela sua chave)
-client = genai.Client(api_key="AIzaSyBNS0t0kH5l3glHsjdVAvuGo9qtLb4vvCk")
+client = genai.Client(api_key="SUA_CHAVE_AQUI")
 
 # Usaremos o modelo recomendado para chat e tarefas gerais de texto
 MODELO = "gemini-2.5-flash"
