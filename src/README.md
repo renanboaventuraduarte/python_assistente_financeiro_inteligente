@@ -20,8 +20,8 @@ streamlit run .\scr\app.py
 ```
 ## Evidências de Execução
 
-![](Evidencias1.jpg) 
+![Evidência 1](Evidencias1.jpg) 
 
-![](Evidencias3.jpg)
+![Evidência 2](Evidencias3.jpg)
 
-![](Evidencias4.jpg)
+![Evidência 3](Evidencias4.jpg)
