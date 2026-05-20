@@ -1,0 +1,12 @@
+data,descricao,categoria,valor receitas,valor despesas,valor atualizado,tipo
+01/10/2025,Salario,receita,R$ 3.000,00,,R$ 3.000,00,ENTRADA
+02/10/2025,Aluguel,moradia,,R$ 1.200,00,R$ 1.800,00,SAIDA
+03/10/2025,Supermercado,alimentacao,,R$ 450,00,R$ 1.350,00,SAIDA
+05/10/2025,Netflix,lazer,,R$ 55,90,R$ 1.294,10,SAIDA
+07/10/2025,Farmacia,saude,,R$ 89,00,R$ 1.205,10,SAIDA
+10/10/2025,Restaurante,alimentacao,,R$ 120,00,R$ 1.085,10,SAIDA
+12/10/2025,Uber,transporte,,R$ 45,00,R$ 1.040,10,SAIDA
+15/10/2025,Adiantamento,receita,R$ 2.000,00,,R$ 3.040,10,ENTRADA
+15/10/2025,Conta de Luz,moradia,,R$ 180,00,R$ 2.860,10,SAIDA
+20/10/2025,Academia,saude,,R$ 99,00,R$ 2.761,10,SAIDA
+25/10/2025,Combustivel,transporte,,R$ 250,00,R$ 2.511,10,SAIDA
