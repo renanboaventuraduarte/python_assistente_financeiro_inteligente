@@ -62,7 +62,7 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | [Streamlit](https://streamlit.io/) |
-| LLM | Ollama (local) |
+| LLM | GOOGLE GEMINI |
 | Base de Conhecimento | JSON/CSV mockados na pasta 'data' |
 
 ---
