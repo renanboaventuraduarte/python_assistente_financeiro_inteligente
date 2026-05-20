@@ -4,7 +4,7 @@
 
 ## Código Completo
 
-Todo código-fonte está no arquivo ![app.py](app.py) .
+Todo código-fonte está no arquivo [app.py](app.py) .
 
 ## Como Rodar
 
@@ -19,9 +19,9 @@ pip install streamlit pandas requests google-genai
 streamlit run .\scr\app.py
 ```
 ## Evidências de Execução
-
+### Evidência 1
 ![Evidência1](Evidencias1.jpg) 
-
+### Evidência 2
 ![Evidência2](Evidencias3.jpg)
-
+### Evidência 3
 ![Evidência3](Evidencias4.jpg)
