@@ -4,7 +4,7 @@
 
 ## Código Completo
 
-Todo código-fonte está no arquivo [](app.py) .
+Todo código-fonte está no arquivo ![](app.py) .
 
 ## Como Rodar
 
@@ -20,10 +20,10 @@ streamlit run .\scr\app.py
 ```
 ## Evidências de Execução
 
-![](Evidencias 1.jpg) 
+![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 1.jpg) 
 
-![](Evidencias 2.jpg)
+![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 2.jpg)
 
-![](Evidencias 3.jpg)
+![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 3.jpg)
 
-![](Evidencias 4.jpg)
+![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 4.jpg)
