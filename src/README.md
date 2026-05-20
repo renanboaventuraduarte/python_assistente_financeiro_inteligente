@@ -4,7 +4,7 @@
 
 ## Código Completo
 
-Todo código-fonte está no arquivo app.py .
+Todo código-fonte está no arquivo [](app.py) .
 
 ## Como Rodar
 
@@ -20,10 +20,10 @@ streamlit run .\scr\app.py
 ```
 ## Evidências de Execução
 
-![Evidência 1](Evidencias 1.jpg)
+![](Evidencias 1.jpg) 
 
-![Evidência 2](Evidencias 2.jpg)
+![](Evidencias 2.jpg)
 
-![Evidência 3](Evidencias 3.jpg)
+![](Evidencias 3.jpg)
 
-![Evidência 4](Evidencias 4.jpg)
+![](Evidencias 4.jpg)
