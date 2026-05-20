@@ -20,10 +20,10 @@ streamlit run .\scr\app.py
 ```
 ## Evidências de Execução
 
-![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 1.jpg) 
+![](Evidencias1.jpg) 
 
-![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 2.jpg)
+![](Evidencias2.jpg)
 
-![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 3.jpg)
+![](Evidencias3.jpg)
 
-![](https://github.com/renanboaventuraduarte/python_assistente_financeiro_inteligente/edit/main/src/Evidencias 4.jpg)
+![](Evidencias4.jpg)
